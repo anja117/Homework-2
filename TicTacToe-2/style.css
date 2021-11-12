@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+    overflow: hidden;
+}
+
+section {
+    min-width: 500px;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 13px 2px rgba(117,117,117,0.7);
+    -webkit-box-shadow: 0px 2px 13px 2px rgba(117,117,117,0.7);
+    -moz-box-shadow: 0px 2px 13px 2px rgba(117,117,117,0.7);
+}
+
+section h1 {
+    margin-top: 5px;
+}
+
+.game-table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-table .row {
+    display: flex;
+}
+.game-table .row .box {
+    width: 33%;
+}
+
+.row .box:nth-child(2) {
+    border-left: 2px solid rgb(104, 104, 104);
+    border-right: 2px solid rgb(104, 104, 104);
+}
+
+.row:nth-child(2) .box {
+    border-top: 2px solid rgb(104, 104, 104);
+    border-bottom: 2px solid rgb(104, 104, 104);
+}
+
+.game-table .box {
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all .2s ease;
+    /* Can't select box content */
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+.game-table .box:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+.game-table .box span.empty {
+    visibility: hidden;
+}
+

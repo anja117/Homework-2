@@ -1,0 +1,145 @@
+.quiz {
+    background-color: aliceblue;
+
+}
+
+.initial-container {
+    position:relative;
+    width:100vw;
+    height:100vh;
+}
+
+.inactive {
+    display: none;
+}
+
+.start, .retry-quiz {
+    font-family: sans-serif;
+    position:absolute;
+    cursor: pointer;
+    font-weight: 700;
+    color:white;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    border: none;
+    width: 100px;
+    padding: 15px 30px;
+    background-color: rgb(146, 124, 124);
+    transition: 0.5s ease; 
+}
+
+.start:hover, .retry-quiz:hover {
+    box-shadow: 3px 7px 5px -1px rgba(0,0,0,0.14);
+    background-color: moccasin;
+    color:black;
+}
+
+.question {
+    display: none; 
+    text-align: center;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 500px;
+    background-color: rgb(243, 97, 97);
+    transition: 0.5s ease;
+}
+
+.question .answer-item {
+    opacity: 0;
+    transition:0.91 ease;
+}
+
+.question-correct {
+    background-color: rgb(152, 216, 57);
+}
+
+.question-active {
+    display:block;
+}
+
+.question-active .answer-item {
+    opacity: 1;
+}
+
+.question-text {
+    font-size: 21px;
+    margin-bottom: 120px;
+}
+
+.answer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.answer-item {
+    cursor: pointer;
+    width:40%;
+    background-color: whitesmoke;
+    margin: 10px;
+    padding:15px 0;
+    transition: 0.5 ease;
+}
+
+.answer-item:hover {
+    background-color: rgb(152, 216, 57);
+}
+
+.wrong {
+    display: none;
+    background-color: red;
+    position:absolute;
+    padding:100px 150px;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition:opacity 1s ease;
+}
+
+.wrong--active {
+    display:block;
+    opacity: 1;
+}
+
+.retry-quiz {
+    background-color: blue;
+    padding:15px 20px;
+    margin:0 auto;
+    top: 70%;
+}
+
+.start-again {
+    display:none;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition:opacity 1s ease;
+}
+
+.start-again--active {
+    display: block;
+    opacity: 1;
+}
+
+.start-again--active {
+    display: block;
+    opacity: 1;
+    background-color: rgb(152, 216, 57);
+    padding: 200px 50px;
+    width: 80vw;
+    text-align: center;
+}
+
+.start-again--active p {
+    font-size: 20px;
+    font-weight: 700;
+}
+

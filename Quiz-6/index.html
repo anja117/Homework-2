@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="quiz">
+        <div class="inital-container">
+            <button class="start" onclick=startQuiz() type="button">START</button>
+        </div>
+        <div class="wrong">
+            <p class="wrong-text">Number of correct answers:
+                <strong><span class="correct-answers"></span></strong>
+            </p>
+            <button class="quiz-button retry-quiz" onclick=startQuiz() type="button">Try again</button>
+        </div>
+        <div class="start-again">
+            <p>You did it!!</p>
+            <button class="quiz-button again-quiz" type="button">Try again</button>
+        </div>
+        <div class="question" id="one">
+            <p class="question-text">Koje godine je poceo Prvi Svetski rat?</p>
+            <div class="answer-container">
+                <p class="answer-item correct">1914</p>
+                <p class="answer-item">1939</p>
+                <p class="answer-item">1912</p>
+                <p class="answer-item">1908</p>
+            </div>
+        </div>
+        <div class="question" id="two">
+            <p class="question-text">Koje godine je Neil Armstrong sletio na Mjesec?</p>
+            <div class="answer-container">
+                <p class="answer-item">1958</p>
+                <p class="answer-item correct">1969</p>
+                <p class="answer-item">1980</p>
+                <p class="answer-item">1974</p>
+            </div>
+        </div>
+        <div class="question" id="three">
+            <p class="question-text">Koji je najveći organ u ljudskom tijelu?</p>
+            <div class="answer-container">
+                <p class="answer-item">Stomak</p>
+                <p class="answer-item">Utroba</p>
+                <p class="answer-item correct">Koza</p>
+                <p class="answer-item">Mozak</p>
+            </div>
+        </div>
+        <div class="question" id="four">
+            <p class="question-text">Halleyeva kometa prođe pored Zemlje svakih koliko godina?</p>
+            <div class="answer-container">
+                <p class="answer-item">120</p>
+                <p class="answer-item">95</p>
+                <p class="answer-item correct">75</p>
+                <p class="answer-item">60</p>
+            </div>
+        </div>
+    </div>
+    <script src="./quiz.js"></script>
+</body>
+</html>
